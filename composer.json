@@ -1,0 +1,27 @@
+{
+    "name": "instante/web",
+    "description": "Instante dev-stack documentation website",
+    "config": {
+        "vendor-dir": "./vendor"
+    },
+    "license": "proprietary",
+    "require": {
+        "php": ">=5.5.0",
+        "nette/nette": "2.3.*",
+        "instante/require-js": "~1.1",
+        "instante/doctrine": "~1.1",
+        "instante/bootstrap": "~1.0",
+        "instante/ui": "~1.0"
+    },
+    "require-dev": {
+        "nette/tester": "@dev",
+        "jakub-onderka/php-parallel-lint": "~0.6",
+        "instante/php-test-suite": "@dev"
+    },
+    "authors": [
+        {
+            "name": "Proof & Reason",
+            "email": "richard.ejem@proofreason.com"
+        }
+    ]
+}

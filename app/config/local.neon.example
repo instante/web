@@ -1,0 +1,12 @@
+#
+# Local machine configuration. Copy to local.neon which should NEVER be versioned.
+#
+parameters:
+    database:
+        dbname:
+        dbname_test:
+        user:
+        password:
+
+    routes:
+        secure: no
