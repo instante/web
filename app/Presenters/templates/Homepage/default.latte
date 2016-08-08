@@ -1,3 +1,52 @@
 {block content}
-<p>page content</p>
+    <div class="container">
+        <img src="{$basePath}/img/logo.svg" id="logo">
+        <div class="center">
+            <p class="claim">Dev-stack solution based on Nette framework, which provides you with fully ready application skeleton
+                and environment <strong>to start developing a web application.</strong>
+            </p>
+            <pre>$ composer create-project instante/skeleton</pre>
+        </div>
+    </div>
+    <div class="blueline">
+        <div class="container center">
+            <div id="searchbox">
+                <span>How do I</span>
+                <input type="text" name="search_how" placeholder="configure database, etc...">
+                <div class="input-group-btn">
+                    <button class="btn btn-info">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </div>
+            </div>
+            <p>New with instante? Read <a href="#">quickstart</a>.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="labelbox col-lg-7" id="features">
+            <div class="label-wrapper">
+                <h2>Features</h2>
+            </div>
+            <ul>
+                <li><span class="glyphicon glyphicon-cog"></span> <span class="feature">Easily configurable application</span></li>
+                <li><span class="glyphicon glyphicon-list-alt"></span> <span class="feature">Unit & integration tests environment</span></li>
+                <li><span class="glyphicon glyphicon-folder-close"></span> <span class="feature">LESS + JS compilation / minification</span></li>
+            </ul>
+            <ul>
+                <li><span class="glyphicon glyphicon-ok-circle"></span> <span class="feature">Presenter testing</span></li>
+                <li><span class="glyphicon glyphicon-cloud-upload"></span> <span class="feature">Deployment process</span></li>
+                <li><span class="glyphicon glyphicon-thumbs-up"></span> <span class="feature"><a href="#">...and much more</a></span></li>
+            </ul>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="labelbox col-lg-4" id="development">
+            <div class="label-wrapper">
+                <h2>Development</h2>
+            </div>
+            <ul>
+                <li><img src="{$basePath}/img/octocat.svg" width="40" height="40"> <a href="http://github.com/instante">http://github.com/instante<a/></li>
+                <li><img src="{$basePath}/img/pull.svg" width="40" height="40"> <a href="#">How to contribute with pull requests</a></li>
+            </ul>
+        </div>
+    </div>
 {/block}

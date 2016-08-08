@@ -1,0 +1,92 @@
+#logo {
+    display: block;
+    width: 653px;
+    height: 188px;
+    margin: 100px auto 50px;
+    max-width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+pre {
+    display: inline-block;
+    width: 563px;
+    max-width: 100%;
+}
+
+.claim {
+    font-size: 18px;
+    color: @color-default;
+    margin-bottom: 50px;
+}
+
+.blueline {
+    background-color: @color-default;
+    width: 100%;
+    margin-top: 100px;
+    padding: 100px 0;
+    color: #fff;
+
+    p {
+        .default-font;
+        padding-top: 30px;
+    }
+}
+
+.labelbox {
+    margin-top: 120px;
+    border: 1px solid @color-default;
+    padding: 0 0 50px;
+
+    @media (min-width: @screen-lg-min) {
+        height: 333px;
+    }
+    .label-wrapper {
+        width: 100%;
+        text-align: center;
+        margin: -24px 0 51px;
+
+        h2 {
+            .label-heading;
+            background: #fff;
+            display: inline;
+            padding: 0 33px;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0 50px;
+        display: inline-block;
+        li {
+            padding: 10px 0;
+            line-height: 40px;
+            .default-font;
+            .feature {
+                position: relative;
+                top: -14px;
+            }
+            .glyphicon {
+                font-size: 40px;
+                padding-right: 20px;
+            }
+            img {
+                margin-right: 20px;
+            }
+        }
+
+        @media (min-width: @screen-md-min) {
+            &:first-of-type {
+                padding-right: 25px;
+            }
+
+            &:last-of-type {
+                padding-left: 25px;
+            }
+        }
+
+
+    }
+}

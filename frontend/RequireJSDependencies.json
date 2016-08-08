@@ -22,19 +22,24 @@
     "instante/events": [
         "instante/debug/console"
     ],
-    "instante/ui/displayablePassword": [
-        "$document",
-        "jquery"
-    ],
     "nette/ajax": [
         "jquery",
         "window"
     ],
-    "nette/core": [],
+    "nette/core": [
+        "window"
+    ],
     "require-config": [],
     "jquery": [],
-    "window": [],
+    "window": [
+        "jquery"
+    ],
     "document": [],
     "$window": [],
-    "$document": []
+    "$document": [],
+    "Date": [],
+    "Math": [],
+    "Object": [],
+    "JSON": [],
+    "RegExp": []
 }

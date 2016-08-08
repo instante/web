@@ -17,6 +17,7 @@
 
     <title>{block title|striptags}HOMEPAGE{/block}</title>
 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{$basePath}/css/main.min.css">
 
 
@@ -25,9 +26,31 @@
 
 <body>
 <script> document.documentElement.className += ' js'</script>
-<div class="container">
-    <h1>Application layout</h1>
+<div id="navbar">
+        <ul>
+            <li>
+                <a href="">Instante</a>
+            </li>
+            <li>
+                <a href="">Features</a>
+            </li>
+            <li>
+                <a href="">Documentation</a>
+            </li>
+            <li>
+                <a href="">Webs using instante</a>
+            </li>
+        </ul>
+</div>
     {include #content}
+<div id="footer">
+    <div class="container">
+        <a href="#" id="authors">Authors</a>
+        <span class="centered">Made with &hearts; in Prague</span>
+        <a href="http://www.proofreason.com" target="_blank" id="proofreason">
+            <img src="{$basePath}/img/proofreason-logo-negative.png">
+        </a>
+    </div>
 </div>
 {control jsLoader}
 {block scripts}{/block}
