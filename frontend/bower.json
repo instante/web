@@ -2,9 +2,9 @@
     "name": "instante/web",
     "version": "0.1.0",
     "authors": [
-        "Proof & Reason"
+        "Honza"
     ],
-    "description": "Instante dev-stack documentation website",
+    "description": "Instante web",
     "moduleType": [
         "globals"
     ],
@@ -17,8 +17,8 @@
         "tests"
     ],
     "dependencies": {
-        "bootstrap": "3.3.4",
         "jquery": "1.11.2",
-        "requirejs": "2.1.19"
+        "requirejs": "2.1.19",
+        "bootstrap": "3.3.4"
     }
 }
