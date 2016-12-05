@@ -10,16 +10,16 @@
     text-align: center;
 }
 
-pre {
-    display: inline-block;
-    width: 563px;
-    max-width: 100%;
-}
-
 .claim {
     font-size: 18px;
     color: @color-default;
     margin-bottom: 50px;
+
+    &+pre {
+        display: inline-block;
+        width: 563px;
+        max-width: 100%;
+    }
 }
 
 .blueline {
