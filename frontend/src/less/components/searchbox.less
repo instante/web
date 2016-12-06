@@ -1,12 +1,12 @@
 #searchbox {
-    width: 563px;
+    width: @width-searchbox;
     max-width: 100%;
     margin: 0 auto;
     position: relative;
-    @media screen and (max-width: 800px) {
+    @media (max-width: @screen-sm-min) {
         margin-top: 30px;
     }
-    @media screen and (max-width: 600px) {
+    @media (max-width: @screen-xs-max) {
         padding: 0 20px
         width: 100%;
     }
@@ -16,13 +16,13 @@
         line-height: 52px;
     }
 
-    >span {
+    .how {
         position: absolute;
         top: 15px;
         left: -90px;
         padding-right: 0px;
         line-height: normal;
-        @media screen and (max-width: 800px) {
+        @media (max-width: @screen-sm-min) {
             left: 0;
             right: 0;
             margin: 0 auto;
@@ -32,11 +32,11 @@
 
     input {
         height: 52px;
-        width: 563px;
+        width: @width-searchbox;
         max-width: 100%;
         padding: 19px 80px 19px 21px;
         color: @color-black;
-        @media screen and (max-width: 600px) {
+        @media (max-width: @screen-xs-max) {
             width: 100%;
         }
 
