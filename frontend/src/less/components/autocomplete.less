@@ -9,22 +9,50 @@
     color: #333;
     text-align: left;
     display: none;
+    font-size: 14px;
+
+    ul.topics {
+        a {
+            padding: 10px;
+        }
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            background: #eee;
+            text-decoration: none;
+        }
+
+        &.more {
+            color: #4dbbeb;
+            text-decoration: underline;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: none;
+                background: transparent;
+            }
+        }
+    }
+
+
 
     ul {
         padding: 0;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         li {
             list-style: none;
             width: 100%;
-            &:after {
-                clear: both;
-                content: '';
-            }
         }
     }
 
     .no-topics {
         margin-bottom: 20px;
+        padding: 0 10px;
         font-weight: bold;
     }
 }
@@ -32,7 +60,7 @@
 .autocomplete__head {
     border-top: 1px solid #0e2d3b;
     padding: 20px 0 10px;
-    font-size: 14px;
+    font-size: 12px;
 
     &:first-child {
         border: 0;
@@ -40,30 +68,50 @@
     }
 }
 
-.autocomplete__item {
-    width: 461px;
-    float: left;
-    display: inline-block;
+ul.upvote__list {
 
-    .votes {
-        font-size: 14px;
+    li {
+        &:hover {
+            background: #eee;
+            text-decoration: none;
+        }
     }
-}
-
-.upvote {
-    width: 60px;
-    display: inline-block;
-    text-align: center;
-    height: 45px;
 
     a {
-        font-size: 14px;
+        padding: 10px;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .upvote__item {
+        width: 441px;
+        float: left;
         display: inline-block;
 
-        .glyphicon {
-            font-size: 20px;
-            line-height: 10px;
-            top: 5px;
+        .votes {
+            font-size: 12px;
+            font-weight: normal;
+
+        }
+    }
+
+    .upvote {
+        width: 60px;
+        display: inline-block;
+        text-align: center;
+
+        a {
+            font-size: 12px;
+            display: inline-block;
+            color: #4dbbeb;
+
+            .glyphicon {
+                font-size: 20px;
+                line-height: 10px;
+                top: 5px;
+            }
         }
     }
 }
