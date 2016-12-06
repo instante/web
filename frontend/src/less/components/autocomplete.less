@@ -1,0 +1,75 @@
+.autocomplete {
+    position: absolute;
+    background: white;
+    width: 100%;
+    border: 1px solid #0e2d3b;
+    border-top: 0;
+    padding: 20px;
+    z-index: 10;
+    color: #333;
+    text-align: left;
+    display: none;
+
+    ul {
+        padding: 0;
+        margin-bottom: 20px;
+        li {
+            list-style: none;
+            width: 100%;
+            &:after {
+                clear: both;
+                content: '';
+            }
+        }
+    }
+
+    .no-topics {
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+}
+
+.autocomplete__head {
+    border-top: 1px solid #0e2d3b;
+    padding: 20px 0 10px;
+    font-size: 14px;
+
+    &:first-child {
+        border: 0;
+        padding: 0 0 10px;
+    }
+}
+
+.autocomplete__item {
+    width: 461px;
+    float: left;
+    display: inline-block;
+
+    .votes {
+        font-size: 14px;
+    }
+}
+
+.upvote {
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    height: 45px;
+
+    a {
+        font-size: 14px;
+        display: inline-block;
+
+        .glyphicon {
+            font-size: 20px;
+            line-height: 10px;
+            top: 5px;
+        }
+    }
+}
+
+input.first:focus + .autocomplete.first,
+input.second:focus + .autocomplete.second,
+input.third:focus + .autocomplete.third {
+    display: block;
+}
