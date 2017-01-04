@@ -35,11 +35,24 @@
             &:hover {
                 text-decoration: none;
                 background: transparent;
+
+                .glyphicon-menu-right {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .glyphicon-menu-right {
+            font-size: 12px;
+            top: 0;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+                background: transparent;
             }
         }
     }
-
-
 
     ul {
         padding: 0;
@@ -68,9 +81,17 @@
     }
 }
 
+.glyphicon-menu-right + .glyphicon-menu-right {
+    position: relative;
+    left: -7px;
+    top: 1px;
+}
+
 ul.upvote__list {
 
     li {
+        padding-bottom: 5px;
+
         &:hover {
             background: #eee;
             text-decoration: none;
@@ -78,7 +99,7 @@ ul.upvote__list {
     }
 
     a {
-        padding: 10px;
+        padding: 5px;
 
         &:hover {
             background: transparent;
@@ -107,6 +128,10 @@ ul.upvote__list {
             display: inline-block;
             color: #4dbbeb;
 
+            &:hover {
+                color: #189bd4;
+            }
+
             .glyphicon {
                 font-size: 20px;
                 line-height: 10px;
@@ -116,8 +141,6 @@ ul.upvote__list {
     }
 }
 
-input.first:focus + .autocomplete.first,
-input.second:focus + .autocomplete.second,
-input.third:focus + .autocomplete.third {
+input:focus + .autocomplete {
     display: block;
 }
