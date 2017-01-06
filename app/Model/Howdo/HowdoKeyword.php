@@ -6,9 +6,9 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(indexes={@ORM\Index(columns={"key_phrase"}, flags={"fulltext"})})
+ * @ORM\Table(indexes={@ORM\Index(columns={"keyword"}, flags={"fulltext"})})
  */
-class HowdoIndex
+class HowdoKeyword
 {
     /**
      * @ORM\Column(type="integer")
@@ -19,14 +19,15 @@ class HowdoIndex
     private $id;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="string")
      * @var string
      */
-    private $keyPhrase;
+    private $keyword;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Model\Howdo\HowdoDocument")
+     * @ORM\ManyToOne(targetEntity="App\Model\Howdo\HowdoDocument", inversedBy="keywords")
      * @var HowdoDocument
      */
     private $document;
 }
+
