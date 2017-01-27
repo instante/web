@@ -1,15 +1,38 @@
 #searchbox {
-    span {
-        padding-right: 20px;
-        line-height: 52px;
+    width: @width-inner-box;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    @media (max-width: @screen-xs-max) {
+        margin-top: 30px;
+        padding: 0 20px
+        width: 100%;
+    }
+
+    .how {
+        position: absolute;
+        top: 15px;
+        left: -90px;
+        padding-right: 0px;
+        line-height: normal;
+
+        @media (max-width: @screen-xs-max) {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: -40px;
+        }
     }
 
     input {
         height: 52px;
-        width: 540px;
+        width: @width-inner-box;
         max-width: 100%;
         padding: 19px 80px 19px 21px;
         color: @color-black;
+        @media (max-width: @screen-xs-max) {
+            width: 100%;
+        }
 
         &::-webkit-input-placeholder{
             font-size: 14px;
@@ -35,11 +58,14 @@
     .input-group-btn {
         display: inline;
         border-radius: none;
+        width: 48px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
         button {
             border-radius: 0;
             height: 50px;
-            margin-left: -65px;
-            margin-top: -5px;
             background: transparent;
             border: none;
             font-size: 24px;
@@ -47,7 +73,8 @@
             outline: 0;
             box-shadow: none;
             .glyphicon {
-                top: -6px;
+                top: 3px;
+                padding-right: 0;
             }
         }
     }
