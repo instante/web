@@ -1,0 +1,148 @@
+.autocomplete {
+    position: absolute;
+    background: white;
+    width: 100%;
+    border: 1px solid #0e2d3b;
+    border-top: 0;
+    padding: 20px;
+    z-index: 10;
+    color: #333;
+    text-align: left;
+    display: none;
+    font-size: 14px;
+
+    ul.topics {
+        a {
+            padding: 10px;
+        }
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            background: #eee;
+            text-decoration: none;
+        }
+
+        &.more {
+            color: #4dbbeb;
+            text-decoration: underline;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: none;
+                background: transparent;
+
+                .glyphicon-menu-right {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .glyphicon-menu-right {
+            font-size: 12px;
+            top: 0;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+                background: transparent;
+            }
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin-bottom: 15px;
+        li {
+            list-style: none;
+            width: 100%;
+        }
+    }
+
+    .no-topics {
+        margin-bottom: 20px;
+        padding: 0 10px;
+        font-weight: bold;
+    }
+}
+
+.autocomplete__head {
+    border-top: 1px solid #0e2d3b;
+    padding: 20px 0 10px;
+    font-size: 12px;
+
+    &:first-child {
+        border: 0;
+        padding: 0 0 10px;
+    }
+}
+
+.glyphicon-menu-right + .glyphicon-menu-right {
+    position: relative;
+    left: -7px;
+    top: 1px;
+}
+
+ul.upvote__list {
+
+    li {
+        padding-bottom: 5px;
+
+        &:hover {
+            background: #eee;
+            text-decoration: none;
+        }
+    }
+
+    a {
+        padding: 5px;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .upvote__item {
+        width: 441px;
+        float: left;
+        display: inline-block;
+        font-weight: bold;
+
+        .votes {
+            font-size: 12px;
+            font-weight: normal;
+
+        }
+    }
+
+    .upvote {
+        width: 60px;
+        display: inline-block;
+        text-align: center;
+        font-weight: normal;
+
+        a {
+            font-size: 12px;
+            display: inline-block;
+            color: #4dbbeb;
+
+            &:hover {
+                color: #189bd4;
+            }
+
+            .glyphicon {
+                font-size: 20px;
+                line-height: 10px;
+                top: 5px;
+            }
+        }
+    }
+}
+
+input:focus + .autocomplete {
+    display: block;
+}

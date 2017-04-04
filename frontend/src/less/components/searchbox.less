@@ -1,11 +1,11 @@
-#searchbox {
+.searchbox {
     width: @width-inner-box;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     position: relative;
     @media (max-width: @screen-xs-max) {
         margin-top: 30px;
-        padding: 0 20px
+        padding: 0 20px;
         width: 100%;
     }
 
@@ -30,6 +30,7 @@
         max-width: 100%;
         padding: 19px 80px 19px 21px;
         color: @color-black;
+
         @media (max-width: @screen-xs-max) {
             width: 100%;
         }
@@ -57,11 +58,10 @@
 
     .input-group-btn {
         display: inline;
-        border-radius: none;
         width: 48px;
         height: 50px;
         position: absolute;
-        top: 0;
+        top: 25px;
         right: 0;
         button {
             border-radius: 0;

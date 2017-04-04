@@ -103,7 +103,7 @@ return folders.map((folder) =>
 
 gulp.task('less', () =>
 {
-    gulp.src(path.join(src.less, '/**/*.less'))
+    return gulp.src(path.join(src.less, '/main.less'))
     .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(concat('main.css'))
